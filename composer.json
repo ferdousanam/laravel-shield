@@ -1,0 +1,42 @@
+{
+    "name": "ferdousanam/laravel-shield",
+    "description": "Laravel Project Shield",
+    "keywords": [
+        "ferdousanam",
+        "laravel",
+        "laravel-shield"
+    ],
+    "homepage": "https://github.com/ferdousanam/laravel-shield",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ferdous Anam",
+            "email": "ferdous.anam@gmail.com",
+            "role": "Author"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "laravel/framework": ">=6.0"
+    },
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Anam\\LaravelShield\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Anam\\LaravelShield\\LaravelShieldServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
