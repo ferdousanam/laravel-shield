@@ -13,8 +13,10 @@ use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/artisan/{cmd}', function ($cmd) {
-    Artisan::call($cmd);
+Route::group(['prefix' => 'artisan/{shield_access_key}'], function () {
+    Route::get('{cmd}', function ($shield_access_key, $cmd) {
+        Artisan::call($cmd);
 
-    return Artisan::output();
+        return Artisan::output();
+    });
 });

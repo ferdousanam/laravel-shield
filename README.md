@@ -14,6 +14,14 @@ Via Composer
 composer require ferdousanam/laravel-shield
 ```
 
+
+### Environment Variables
+
+```dotenv
+APP_SHIELD_API_KEY=
+APP_SHIELD_ACCESS_KEY=
+```
+
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
